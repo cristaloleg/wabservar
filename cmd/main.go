@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-
 	index := func(req *wabservar.Request) ([]byte, int, error) {
 		req.Header.Add("Location", "http://www.wabservar.enterprise.com/index.asp")
 		return nil, 301, nil

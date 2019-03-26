@@ -48,7 +48,7 @@ func (h *Headers) Get(name string) (string, bool) {
 func (h Headers) String() string {
 	var buf strings.Builder
 	for k, v := range h.h {
-		fmt.Fprintf(&buf, "%s: %s\r\n", k, v)
+		fmt.Fprintf(&buf, "%s: %s\r\n", k, strings.Join(v, ", "))
 	}
 	return buf.String()
 }

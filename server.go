@@ -53,6 +53,7 @@ func (s *Server) Run() {
 			continue
 		}
 		conn.(*net.TCPConn).SetKeepAlive(true)
+		conn.(*net.TCPConn).SetKeepAlivePeriod(5 * time.Second)
 
 		go s.handleConn(conn)
 
