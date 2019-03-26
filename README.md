@@ -22,6 +22,8 @@ Features:
 - cool name
 - yolo
 
+Additional Thank you to the Go team and `net/http` package :tada:
+
 ### Example
 
 ```go
